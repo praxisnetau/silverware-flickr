@@ -1,0 +1,11 @@
+---
+Name: silverware-flickr-cache
+---
+
+# Configure Cache:
+
+SilverStripe\Core\Injector\Injector:
+  Psr\SimpleCache\CacheInterface.FlickrPhotosComponentCache:
+    factory: SilverStripe\Core\Cache\CacheFactory
+    constructor:
+      namespace: 'FlickrPhotosComponentCache'

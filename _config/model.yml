@@ -1,0 +1,9 @@
+---
+Name: silverware-flickr-model
+---
+
+# Configure Model:
+
+SilverStripe\Core\Injector\Injector:
+  FlickrAPI:
+    class: SilverWare\Flickr\API\FlickrAPI

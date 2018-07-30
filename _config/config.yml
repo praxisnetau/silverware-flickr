@@ -1,0 +1,17 @@
+---
+Name: silverware-flickr
+---
+
+# Configure Site Configuration:
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SilverWare\Flickr\Extensions\FlickrConfig
+
+# Configure Content Controller:
+
+SilverStripe\CMS\Controllers\ContentController:
+  required_js:
+    - "silverware/flickr: client/dist/js/bundle.js"
+  required_css:
+    - "silverware/flickr: client/dist/styles/bundle.css"

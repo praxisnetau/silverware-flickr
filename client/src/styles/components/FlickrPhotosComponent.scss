@@ -1,0 +1,70 @@
+/* Flickr Photos Component Styles
+===================================================================================================================== */
+
+.flickrphotoscomponent {
+  
+  .content {
+    
+    ul.photos {
+      
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      
+      display: flex;
+      flex-flow: row wrap;
+      
+      li.photo {
+        
+        a {
+          
+          opacity: 0.75;
+          padding: $spacer-quarter;
+          background: $white;
+          border: 1px solid $gray-400;
+          display: inline-block;
+          margin: 0 $spacer-half $spacer-half 0;
+          transition: opacity .5s ease-out, box-shadow .5s ease-out;
+          
+          @include hover-focus {
+            opacity: 1;
+            box-shadow: 0 0 $spacer-half rgba($black, 0.25);
+          }
+          
+          img {
+            display: inline-block;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+    div.link {
+      
+      margin-top: $spacer;
+      
+      a {
+        
+        opacity: 0.25;
+        transition: opacity .5s ease-out;
+        display: inline-block;
+        
+        @include hover-focus {
+          opacity: 1;
+        }
+        
+        img {
+          display: inline-block;
+          max-width: 100%;
+          height: auto;
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+}
